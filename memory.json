@@ -1,11 +1,15 @@
 {
-  "updated": "2026-09-14T06:00:00+08:00",
+  "updated": "2026-09-14T15:02:00+08:00",
   "decisions": [
     "Working master brand: HALUS",
     "Line: Fine tools. Humid days.",
-    "Price pocket: RM39-89 singles, Core 6 RM189",
+    "Gap: missing middle in MY tools \u2014 climate + no-shed, not a 14-piece pink set",
+    "Price pocket: RM39-89 singles; H-01 RM69; Core 6 RM189; doorway RM19-29",
+    "Beside Real Techniques, under Sigma",
     "Launch 11 SKUs only",
-    "EN source of truth, BM conversion, CN trust",
+    "Cleanser needs NPRA; brushes are accessories",
+    "EN source of truth, BM conversion, CN Simplified trust; max two languages per caption",
+    "GTM: TikTok Shop + Shopee first; Watsons later; Sephora year two",
     "30-day no-shed swap is the public promise"
   ],
   "notes": [
@@ -13,6 +17,11 @@
       "at": "2026-09-14T13:59:00+08:00",
       "who": "hq",
       "text": "Pages deploy failed because Pages was not enabled. Workflow now tries enablement: true."
+    },
+    {
+      "at": "2026-09-14T15:02:00+08:00",
+      "who": "hq",
+      "text": "UPDATE PAGE: locked briefing synced. Pages live at https://steventjwai-newbie.github.io/halus-hq/"
     }
   ]
 }
