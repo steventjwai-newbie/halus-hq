@@ -1,0 +1,18 @@
+{
+  "updated": "2026-09-14T06:00:00+08:00",
+  "decisions": [
+    "Working master brand: HALUS",
+    "Line: Fine tools. Humid days.",
+    "Price pocket: RM39-89 singles, Core 6 RM189",
+    "Launch 11 SKUs only",
+    "EN source of truth, BM conversion, CN trust",
+    "30-day no-shed swap is the public promise"
+  ],
+  "notes": [
+    {
+      "at": "2026-09-14T13:59:00+08:00",
+      "who": "hq",
+      "text": "Pages deploy failed because Pages was not enabled. Workflow now tries enablement: true."
+    }
+  ]
+}
