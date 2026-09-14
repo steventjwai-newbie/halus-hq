@@ -1,0 +1,64 @@
+:root{
+  --ivory:#F6F1E8;--espresso:#2C2416;--laterite:#C4845A;--sage:#8A9A86;
+  --gold:#B8955A;--grey:#6E6A64;--paper:#FFFbf5;--line:#E4D9C8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--ivory);color:var(--espresso);
+  font-family:Georgia,"Times New Roman",serif}
+button,input,textarea,select{font:inherit}
+#gate{min-height:100%;display:flex;align-items:center;justify-content:center;padding:24px;
+  background:radial-gradient(1200px 500px at 50% -10%,#efe4d2,var(--ivory))}
+.card{width:min(420px,100%);background:var(--paper);border:1px solid var(--line);padding:36px 32px}
+.mark{letter-spacing:.28em;font-size:11px;color:var(--gold);text-align:center}
+h1.logo{font-weight:500;letter-spacing:.18em;text-align:center;margin:10px 0 6px;font-size:34px}
+.sub{text-align:center;color:var(--grey);font-size:13px;margin:0 0 28px}
+label{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--grey);margin:12px 0 6px}
+input[type=text],input[type=password],textarea{width:100%;border:1px solid var(--line);background:#fff;padding:10px 12px;color:var(--espresso)}
+.btn{width:100%;margin-top:18px;background:var(--espresso);color:var(--ivory);border:0;padding:12px;letter-spacing:.12em;cursor:pointer}
+.btn:hover{background:#3a3123}
+.err{color:#9b3a2a;font-size:13px;min-height:18px;margin-top:8px}
+.app{display:none;height:100%;grid-template-columns:240px 1fr 360px}
+.app.on{display:grid}
+.side{background:var(--espresso);color:var(--ivory);padding:28px 16px;display:flex;flex-direction:column}
+.side .logo{letter-spacing:.2em;font-size:22px;margin:0 8px 4px}
+.side .tag{font-size:11px;color:#cbb892;margin:0 8px 28px;font-family:system-ui,sans-serif}
+.nav{display:flex;flex-direction:column;gap:4px}
+.nav button{text-align:left;background:transparent;border:0;color:#e8dcc8;padding:10px 12px;cursor:pointer;font-family:system-ui,sans-serif;font-size:13px}
+.nav button.active,.nav button:hover{background:#3d3426;color:#fff}
+.side .foot{margin-top:auto;font-family:system-ui,sans-serif;font-size:11px;color:#b7aa95;padding:8px}
+main{overflow:auto;padding:36px 40px 80px}
+h2{font-weight:500;font-size:28px;margin:0 0 8px}
+.lead{color:var(--grey);font-size:15px;margin:0 0 24px;max-width:70ch}
+h3{font-size:18px;margin:28px 0 10px;font-weight:500}
+p,li{line-height:1.55;font-family:system-ui,sans-serif;font-size:14.5px}
+ul{padding-left:18px}
+table{width:100%;border-collapse:collapse;font-family:system-ui,sans-serif;font-size:13px;margin:12px 0 20px}
+th,td{border-bottom:1px solid var(--line);text-align:left;padding:8px 8px 8px 0;vertical-align:top}
+th{color:var(--grey);font-weight:600;font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 20px}
+.pill{border:1px solid var(--line);padding:6px 10px;font-family:system-ui,sans-serif;font-size:12px;background:#fff}
+.swatches{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 20px}
+.sw{width:92px}
+.sw i{display:block;height:52px;border:1px solid var(--line)}
+.sw b{display:block;font-family:system-ui,sans-serif;font-size:11px;margin-top:6px}
+.check{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line);font-family:system-ui,sans-serif;font-size:14px}
+.check input{margin-top:3px}
+.done{text-decoration:line-through;color:var(--grey)}
+.chatp{background:#fff;border-left:1px solid var(--line);display:flex;flex-direction:column;height:100%}
+.chatp h3{margin:18px 18px 4px;font-size:16px}
+.hint{font-family:system-ui,sans-serif;font-size:12px;color:var(--grey);margin:0 18px 12px}
+#log{flex:1;overflow:auto;padding:0 18px 12px}
+.msg{margin:10px 0;padding:10px 12px;font-family:system-ui,sans-serif;font-size:13.5px;line-height:1.5}
+.msg.bot{background:#f3ece1}
+.msg.me{background:var(--espresso);color:var(--ivory)}
+.composer{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}
+.composer textarea{height:64px;resize:none}
+.composer button{width:auto;padding:0 14px}
+@media(max-width:980px){
+  .app.on{display:flex;flex-direction:column}
+  .side{flex-direction:row;flex-wrap:wrap;align-items:center}
+  .nav{flex-direction:row;flex-wrap:wrap}
+  .chatp{min-height:420px;border-left:0;border-top:1px solid var(--line)}
+  main{padding:24px 18px}
+}
+.hidden{display:none}
