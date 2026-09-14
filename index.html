@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HALUS HQ</title>
+<link rel="stylesheet" href="app.css"/>
+</head>
+<body>
+<div id="gate">
+  <form class="card" onsubmit="return login(event)">
+    <div class="mark">PRIVATE BRIEFING</div>
+    <h1 class="logo">HALUS</h1>
+    <p class="sub">Makeup tools HQ · Malaysia</p>
+    <label>Username</label>
+    <input id="user" type="text" autocomplete="username" required/>
+    <label>Password</label>
+    <input id="pass" type="password" autocomplete="current-password" required/>
+    <div class="err" id="err"></div>
+    <button class="btn" type="submit">ENTER</button>
+  </form>
+</div>
+<div class="app" id="app">
+  <aside class="side">
+    <div class="logo">HALUS</div>
+    <p class="tag">Fine tools. Humid days.</p>
+    <nav class="nav" id="nav"></nav>
+    <div class="foot">Logged in as roujing<br/>Briefing · Sep 2026</div>
+  </aside>
+  <main id="main"></main>
+  <aside class="chatp">
+    <h3>Briefing chat</h3>
+    <p class="hint">Answers from this HALUS briefing. It cannot continue the original Grok thread. Checklist ticks stay on this device.</p>
+    <div id="log"></div>
+    <div class="composer">
+      <textarea id="q" placeholder="Ask about price, names, SKUs, language…"></textarea>
+      <button class="btn" type="button" onclick="ask()">Ask</button>
+    </div>
+  </aside>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
