@@ -30,15 +30,20 @@
   <main id="main"></main>
   <aside class="chatp">
     <h3>Briefing chat</h3>
-    <p class="hint">Answers from this HALUS briefing. It cannot continue the original Grok thread. Checklist ticks stay on this device.</p>
+    <p class="hint">Saves on this device. Pin writes a GitHub note other devices can load. Page tabs update when memory.json is committed.</p>
     <div id="log"></div>
     <div class="composer">
-      <textarea id="q" placeholder="Ask about price, names, SKUs, language…"></textarea>
+      <textarea id="q" placeholder="Ask, or type remember: your decision"></textarea>
       <button class="btn" type="button" onclick="ask()">Ask</button>
+    </div>
+    <div class="composer" style="margin-top:0;padding-top:0">
+      <button class="btn" type="button" onclick="pinNote()">Pin last note to HQ</button>
     </div>
   </aside>
 </div>
+<script src="memory.js"></script>
 <script src="app-core.js"></script>
 <script src="content.js"></script>
+<script src="patch.js"></script>
 </body>
 </html>
